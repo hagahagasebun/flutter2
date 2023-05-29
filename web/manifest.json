@@ -1,6 +1,6 @@
 {
-    "name": "sample2",
-    "short_name": "sample2",
+    "name": "quiz",
+    "short_name": "quiz",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
