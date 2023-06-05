@@ -14,22 +14,22 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (result.round() * 100 ~/ quizNumber) {
       case 60:
-        comment = "雑魚";
+        comment = "まあまあ";
         break;
       case 70:
-        comment = "まあ雑魚";
+        comment = "まあまあ";
         break;
       case 80:
-        comment = "やるじゃん";
+        comment = "いいね";
         break;
       case 90:
-        comment = "好き♡";
+        comment = "すごい";
         break;
       case 100:
-        comment = "結婚しましょう";
+        comment = "よくできました";
         break;
       default:
-        comment = "馬鹿垂れ";
+        comment = "頑張りましょう";
         break;
     }
     print("${result / quizNumber * 100}");
@@ -47,7 +47,7 @@ class Result extends StatelessWidget {
                 onPressed: () async {
                   await goToTop(context);
                 },
-                child: const Text('♡トップへ戻る♡')),
+                child: const Text('トップへ戻る')),
           ],
         ),
       ),

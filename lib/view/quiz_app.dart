@@ -26,13 +26,13 @@ class QuizApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center, //Coloumの中身を真ん中に配置
           children: <Widget>[
             const Text(
-              '21年間生き抜いた鈴木雄大',
+              'クイズ',
             ),
             ElevatedButton(
                 onPressed: () {
                   goToQuizApp(context); //クイズアプリへ遷移するQuizApp関数がよばれる
                 },
-                child: const Text('♡スタート♡')),
+                child: const Text('スタート')),
           ],
         ),
       ),
