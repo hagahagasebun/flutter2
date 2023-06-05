@@ -26,7 +26,8 @@ class QuizApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center, //Coloumの中身を真ん中に配置
           children: <Widget>[
             const Text(
-              'クイズ',
+              '21年間生き抜いた自分',
+              style: TextStyle(fontSize: 100),
             ),
             ElevatedButton(
                 onPressed: () {
