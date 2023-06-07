@@ -27,12 +27,22 @@ class QuizApp extends StatelessWidget {
           children: <Widget>[
             const Text(
               '21年間生き抜いた自分',
-              style: TextStyle(fontSize: 100),
+              style: TextStyle(
+                color: Colors.red, //文字の色
+                fontSize: 100, //文字の大きさ
+                fontWeight: FontWeight.bold, //テキストの太さ
+              ),
             ),
             ElevatedButton(
                 onPressed: () {
                   goToQuizApp(context); //クイズアプリへ遷移するQuizApp関数がよばれる
                 },
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.red, // 背景色
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0), // 角丸の半径
+                  ),
+                ),
                 child: const Text('スタート')),
           ],
         ),
