@@ -14,22 +14,22 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (result.round() * 100 ~/ quizNumber) {
       case 60:
-        comment = "まあまあ";
+        comment = "あほんだらだな！！！";
         break;
       case 70:
-        comment = "まあまあ";
+        comment = "まあまあやるじゃん";
         break;
       case 80:
-        comment = "いいね";
+        comment = "やるじゃん";
         break;
       case 90:
-        comment = "すごい";
+        comment = "すごいじゃー－－ん";
         break;
       case 100:
-        comment = "よくできました";
+        comment = "よくできたね♡";
         break;
       default:
-        comment = "頑張りましょう";
+        comment = "俺のこと勉強しろよ";
         break;
     }
     print("${result / quizNumber * 100}");
