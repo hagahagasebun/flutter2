@@ -33,17 +33,27 @@ class QuizApp extends StatelessWidget {
                 fontWeight: FontWeight.bold, //テキストの太さ
               ),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  goToQuizApp(context); //クイズアプリへ遷移するQuizApp関数がよばれる
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.red, // 背景色
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0), // 角丸の半径
+            Container(
+              width: 200,
+              height: 50,
+              child: ElevatedButton(
+                  onPressed: () {
+                    goToQuizApp(context); //クイズアプリへ遷移するQuizApp関数がよばれる
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white, // 背景色
+                    onPrimary: Colors.red, //ボタンのテキスト文字色
+                    elevation: 10.0,
+                    shadowColor: Colors.red,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0), // 角丸の半径
+                    ),
                   ),
-                ),
-                child: const Text('スタート')),
+                  child: Text(
+                    'スタート',
+                    style: TextStyle(fontSize: 20),
+                  )),
+            )
           ],
         ),
       ),
