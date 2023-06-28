@@ -40,7 +40,8 @@ class Result extends StatelessWidget {
           //Columnの中に入れたものは縦に並べられる．Rowだと横に並べられる
           mainAxisAlignment: MainAxisAlignment.center, //Coloumの中身を真ん中に配置
           children: <Widget>[
-            Text(comment),
+            Text(comment,
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
             Text('正答数$result'),
             Text('正答率${result / quizNumber * 100}%'),
             ElevatedButton(
