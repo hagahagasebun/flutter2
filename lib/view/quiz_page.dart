@@ -60,6 +60,7 @@ class QuizPageState extends State<QuizPage> {
                   Text(
                     quizList[index]['question'],
                     textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                 ])),
                 SliverList(
