@@ -41,7 +41,10 @@ class Result extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center, //Coloumの中身を真ん中に配置
           children: <Widget>[
             Text(comment,
-                style: TextStyle(fontSize: 100, fontWeight: FontWeight.bold)),
+                style: TextStyle(
+                    fontSize: 100,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red)),
             Text('正答数$result'),
             Text('正答率${result / quizNumber * 100}%'),
             ElevatedButton(
@@ -50,6 +53,8 @@ class Result extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,
+                  elevation: 10.0,
+                  shadowColor: Colors.red,
                 ),
                 child: Text(
                   'トップへ戻る',
