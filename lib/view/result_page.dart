@@ -55,8 +55,9 @@ class Result extends StatelessWidget {
                   color: Colors.red,
                 ),
               ),
-              Text('正答数$result'),
-              Text('正答率${result / quizNumber * 100}%'),
+              Text('正答数$result', style: TextStyle(color: Colors.red)),
+              Text('正答率${result / quizNumber * 100}%',
+                  style: TextStyle(color: Colors.red)),
               ElevatedButton(
                 onPressed: () async {
                   await goToTop(context);
