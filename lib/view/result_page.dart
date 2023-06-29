@@ -37,7 +37,7 @@ class Result extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('../assets/image/hikitatenkou2.jpg'),
+          image: AssetImage('../assets/image/tenkou.jpg'),
           fit: BoxFit.cover,
         ),
       ),
